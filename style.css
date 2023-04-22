@@ -92,6 +92,11 @@ header a:hover {
     text-decoration: underline;
 }
 
+i {
+    width: 0.8em;
+    margin-right: 0.8em;
+}
+
 h1 {
     font-size: 1em;
     font-weight: 500;
