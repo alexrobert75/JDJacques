@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: rgba(189, 207, 223, 0.95);
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+header a:hover {
+    color: white;
+    transition: all 0.2s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 7em auto;
+}
+
+.blocbio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
+}
+
+.blocinfos {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: darkslategrey;
+}
+
+.blocinfos li {
+    display: block;
+}
+
+.infos li {
+    margin: 0.3em;
+}
+
+.infos {
+    line-height: 1.3;
+}
+
+.photoprofil {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.photoprofil img {
+    width: 100%;
+}
+
+.bloctexte {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloctexte p {
+    text-align: justify;
+}
+
+.bloctexte a {
+    color: darkslategrey;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.item h3 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+button {
+    border: 1px solid navy;
+    background-color: white;
+    padding: 0.4em;
+    border-radius: 5px;
+    transition: all 0.1s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: lightgrey;
+    transition: all 0.1s;
+}
+
+.secondtitle {
+    color: darkslategrey;
+}
+
+.articletitle {
+    font-style: italic;
+}
+
+.item {
+    margin-bottom: 2em;
+}
+
+@media all and (max-width: 800px) {
+    header {
+        display: none;
+    }
+
+    .container {
+        margin: 4em auto;
+    }
+
+    .blocbio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        gap: 0.2em;
+    }
+
+    .blocinfos {
+        width: 80%;
+        text-align: center;
+    }
+
+    .bloctexte {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photoprofil {
+        width: 60%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    .photoprofil img {
+        width: 100%;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos ul {
+        padding-inline-start: 0 !important;
+    }
+}
